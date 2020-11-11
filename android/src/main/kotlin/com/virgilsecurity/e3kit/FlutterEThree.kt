@@ -28,7 +28,7 @@ class FlutterEThree {
 
             if(!optional && arg == null) {
                 val errorCode = "argument_not_found"
-                val errorMessage = "Could not find argument `$argument` of type ${arg?.java?.name}"
+                val errorMessage = "Could not find argument `$argument`"
                 result.error(errorCode, errorMessage, null)
                 throw Error("$errorCode: $errorMessage")
             }
